@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organizador Escolar - ToDo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Organizador Escolar</h1>
+      <p>Registre atividades com data e descrição — tudo salvo localmente.</p>
+    </header>
+
+    <main>
+      <form id="taskForm" class="form">
+        <input type="text" id="title" placeholder="Nome da atividade" required maxlength="100" />
+        <input type="date" id="date" required />
+        <textarea id="description" placeholder="Descrição da atividade (opcional)" rows="3"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" id="saveBtn">Adicionar</button>
+          <button type="button" id="cancelEdit" class="hidden">Cancelar edição</button>
+        </div>
+      </form>
+
+      <section class="controls">
+        <input type="text" id="search" placeholder="Pesquisar por título ou descrição" />
+        <select id="filter">
+          <option value="all">Todas</option>
+          <option value="pending">Pendentes</option>
+          <option value="done">Concluídas</option>
+        </select>
+        <button id="clearAll">Limpar tudo</button>
+      </section>
+
+      <ul id="taskList" class="task-list"></ul>
+    </main>
+
+    <footer>
+      <small>Dados salvos no seu navegador (LocalStorage)</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
