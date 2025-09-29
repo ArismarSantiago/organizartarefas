@@ -35,7 +35,7 @@ header p{margin:0 0 18px 0; color:var(--muted)}
 .form{
   display:grid;
   gap:10px;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: 1fr 280px;
 }
 .form textarea{grid-column:1/3}
 .form input[type="text"], .form input[type="date"], .form textarea{
@@ -65,10 +65,11 @@ button{
 #cancelEdit{background:#d1d5db; color:#111}
 
 .controls{
-  display:flex;
+ /*** display:flex;***/
   gap:10px;
-  margin:16px 0;
+  margin:16px;
   align-items:center;
+  max-width: 100%;
 }
 .controls input, .controls select{
   padding:8px 10px;
