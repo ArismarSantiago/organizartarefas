@@ -78,7 +78,7 @@ button{
   background:var(--card);
   font-size:14px;
 }
-#clearAll{background:var(--danger); color:white; margin-left:auto}
+#clearAll{background:var(--danger); color:white; margin-top:6px; margin-left:auto}
 
 .task-list{
   list-style:none;
@@ -144,3 +144,4 @@ button{
   .form textarea{grid-column:1/2}
   .task{grid-template-columns:1fr 100px}
 }
+
